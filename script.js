@@ -155,7 +155,6 @@ function handleKeyboard(keyEvent) {
     return;
   }
 
-
   // If the key pressed is not a number, a set of if blocks will handle each
   // other acceptable key.
   if (key === 'c') {
@@ -170,7 +169,7 @@ function handleKeyboard(keyEvent) {
         document.querySelector('[data-button="percentage-button"]');
     percentageButton.click();
   } else if (key === '/') {
-    // Prevents the search action in Firefox when the / key is pressed.
+    // Prevents the search action in Firefox when the `/` key is pressed.
     keyEvent.preventDefault();
 
     const divisionButton =
